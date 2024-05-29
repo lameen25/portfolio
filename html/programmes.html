@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programmes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+        }
+        .header{
+            background-color: orange;
+            height: 100px;
+            color: black;
+        }
+        .header p{
+            text-align: center;
+            font-weight: bolder;
+            font-size:30px;
+            padding: 20px;
+            font-family: cursive;
+            text-transform: capitalize;
+        }
+        .header2{
+            height: 40px;
+            background-color: rgba(128, 0, 0, 0.877);
+            color: black;
+        }
+        .header2 p{
+            text-align: center;
+            text-transform: capitalize;
+            color: orange;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 20px;
+            padding: 4px;
+        }
+        .header3{
+            border: 1px solid black;
+            height: 70px;
+        }
+        .header3 p{
+            font-size:19px;
+            text-transform: capitalize;
+        }
+        .clubs {
+            background-color:rgba(255, 166, 0, 0.726);
+            height: 7000px;
+        }
+        .clubs p{
+            background-color: orangered;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            text-transform:uppercase;
+            border: 1px dotted cyan;
+            border-radius: 5px;
+            
+        } 
+        .volley set{
+            background-color: black;
+            color: aliceblue;
+            border-radius: 3px;
+            padding: 2px;
+            margin: 2px;
+            transform: translateY(2em);
+            border: 1px solid chocolate;
+            
+        }
+        .volley{
+            border: 1.5px dashed chocolate;
+            height: 200px;
+        }
+        .box1,.box2,.box3,.box4,.box5{
+            height: 90%;
+            width: 252.4px;
+            background-color: aqua;
+            transform: translate(-0.5em,-1em);
+            margin-left:17px;
+            float: left;
+        }
+        .box1{
+            background: url(../img/Volleyball\ .jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box2{
+            background: url(../img/Volley.jpg)no-repeat;
+            background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+        }
+        .box3{
+            background: url(../img/Volleyball\ 2.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box4{
+            background: url(../img/Volleyball\ 3.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box5{
+            background: url(../img/Volley.jpg);
+        }
+        .table{
+            border: 1px dotted chocolate;
+            height: 200px;
+            margin-top: 10px;
+        }
+        .table pan{
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            margin-top: -0.3em;
+            padding: 2px;
+            float: left;
+
+        }
+        .box6,.box7,.box8,.box9,.box10{
+            height: 90%;
+            width: 252.5px;
+            background-color: aqua;
+            transform: translate(-5.5em,1em);
+            margin-left:17px;
+            float: left;
+        }
+        .box10{
+            transform: translate(67em,-10.3em);
+            background: url(../img/Table\ tennis\ .jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box6{
+            background: url(../img/Tennis.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box7{
+            background: url(../img/Tennis\ 2.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        }
+        .box8{
+            background: url(../img/Tennis\ 3.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+
+        }
+        .box9{
+            background: url(../img/Table\ tennis\ .jpg);
+
+        }
+        .bad{
+            height: 200px;
+            border: 1px dotted chocolate;
+            margin-top: 10px;
+        }
+        .bad pet{
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            margin-top: -0.3em;
+            padding: 2px;
+           margin-left: -82.5em;
+        }
+        .box11,.box12,.box13,.box14{
+           height: 90%;
+           width: 252px;
+           background-color: aqua;
+           float: left;
+           margin-left: 10px;
+           transform: translate(-16.9em,1.1em);
+           padding: 1px;
+           
+        }
+        .box13{
+            background: url(../img/Badminton\ 2.jpg);
+            margin-left: 1em;
+        }
+        .box12{
+            background: url(../img/Badminton\ .jpg);
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+            margin-left: 0.7em;
+        }
+        .box14{
+            background: url(../img/Badminton\ 3.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+            margin-left: 1.5em;
+        }
+        .box11{
+            background: url(../img/Badminton\ 2.jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+             margin-left: 6px;
+        }
+       .box15{
+        background: url(../img/Badminton\ .jpg)no-repeat;
+            background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+            transform: translateX(68em);
+            height: 90%;
+            width: 255px;
+            background-color: aqua;
+            padding: 1px;
+       }
+       .swim{
+        border: 1px solid chocolate;
+        height: 200px;
+        margin-top: 20px;
+       }
+        .swim into{
+        background-color: black;
+        border-radius: 3px;
+        color: white;
+       margin-left: -0.1em;
+        float: left;
+       }
+       .box16,.box17,.box18,.box19,.box20{
+        height: 92%;
+        width: 256.9px;
+        background-color: cyan;
+        transform: translateY(1em);
+        float: left;
+        margin-left: 5px;
+        margin: 6px;
+       
+       }
+       .box16,.box17,.box18,.box19{
+        transform: translate(-4em,11px);
+       }
+       .box20{
+        transform: translate(67.7em,-11.5em);
+       }
+       .box16{
+        background: url(../img/swimmings.jpg)no-repeat;
+             background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+       }
+       .box17{
+        background: url(../img/Swimming\ .jpg)no-repeat;
+        background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+       }
+       .box18{
+        background: url(../img/Swimming\ 2.jpg)no-repeat;
+        background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+       }
+       .box19{
+        background: url(../img/swimmings.jpg);
+             background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+        
+       }
+       .box20{
+        background: url(../img/Swimming\ .jpg);
+             background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+       }
+       .debate{
+        border: 1px solid chocolate;
+        margin-top: 10px;
+        height: 600px;
+       }
+       .debate bet{
+        background-color: black;
+        border-radius: 3px;
+        float: left;
+        color: white;
+        margin-left: -17em;
+       }
+       .box21{
+        background: url(../img/Debate.jpg)no-repeat;
+        background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+             transform: scale(4em);
+             height: 580px;
+             width: 100%;
+             margin-top: 1.2em;
+        
+       }
+       .football{
+        border: 1px solid chocolate;
+        margin-top: 10px;
+        height: 450px;
+       }
+       .football foot{
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        margin-left: -84em;
+       }
+       .box22,.box23{
+        width: 49.6%;
+        height:436px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+        margin-top: 1em;
+       }
+       .box23{
+        background: url(../img/Football\ -1.jpg)no-repeat;
+             background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+
+       }
+       .box22{
+        background: url(../img/Football\ .jpg)no-repeat;
+        background-size: cover;
+             background-position: center;
+             backface-visibility: hidden;
+             background-attachment: fixed;
+       }
+       .artisan jet{
+        background-color: orangered;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            text-transform:uppercase;
+            border: 1px dotted cyan;
+            border-radius: 5px;
+            margin-top: 10px;
+           
+       }
+       sock{
+        background-color: orangered;
+        padding: 10px;
+        text-transform:uppercase;
+        border: 1px dotted cyan;
+        text-align: center;
+        border-radius: 4px;
+        color: aliceblue;
+       }
+       .train{
+        margin-top: 10px;
+       }
+      
+       car{
+        text-transform: capitalize;
+        background-color: black;
+        color: white;
+        transform: translate(1em,4em);
+       }
+       .box24,.box25,.box26{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box24{
+        background: url(../img/Carpentry\ .jpg);        
+       }
+       .box25{
+        background: url(../img/Carpenter\ -1.jpg);
+       }
+       .box26{
+        background: url(../img/Carpentry\ 2.jpg);
+       }
+       .box27,.box28,.box29{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       make{
+        background-color: black;
+        color: white;
+        height: 50px;
+        text-transform: capitalize;
+       }
+       .box27{
+        background: url(../img/Makeup-1.jpg);
+       }
+       .box28{
+        background: url(../img/Makeup3-1.jpg);
+       }
+       .box29{
+        background: url(../img/Makup.jpg)repeat;
+            
+       }
+       hair{
+        background-color: black;
+        color: white;
+
+       }
+       .box30,.box31,.box32{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box30{
+        background: url(../img/Hair8-1.jpg);
+       }
+       .box31{
+        background: url(../img/Hair\ d4-1.jpg);
+       }
+       .box32{
+        background: url(../img/Hair\ s-1.jpg);
+       }
+       barb{
+        background-color: black;
+        color: white;
+       }
+       .box33,.box34,.box35{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box33{
+        background: url(../img/Barb-1.jpg);
+       }
+       .box34{
+        background: url(../img/Barber2.jpg);
+       }
+       .box35{
+        background: url(../img/Barb.jpg);
+       }
+       fashion{
+        background: black;
+        color: white;
+       }
+       .box36,.box37,.box38{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box36{
+        background: url(../img/Tailor20-1.jpg);
+       }
+       .box37{
+        background: url(../img/Tailor\ 2.jpg);
+       }
+       .box38{
+        background: url(../img/Tailors\ -1.jpg);
+       }
+       cook{
+        background: black;
+        color: white;
+       }
+       .box39,.box40,.box41{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box39{
+        background: url(../img/Cookin1.jpg);
+       }
+       .box40{
+        background: url(../img/Baking\ 3.jpg);
+       }
+       .box41{
+        background: url(../img/Cooking\ 3-1.jpg);
+       }
+       code{
+        background-color: black;
+        color: white;
+       }
+       .box42,.box43,.box44{
+        width: 32.7%;
+        height: 250px;
+        background-color: cyan;
+        float: left;
+        margin-left: 5px;
+       }
+       .box42{
+        background: url(../img/Coding.jpg);
+       }
+       .box43{
+        background: url(../img/Coding\ 2.jpg);
+
+       }
+       .box44{
+        background: url(../img/Coding\ 4.jpg);
+       }
+       disk{
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        background: orangered;
+        border-radius: 3px;
+        height: 30px;
+        margin: 5px;
+       }
+       .skills p{
+        margin-top: 16.5em;
+        
+       }
+       .social{
+        border: 1px solid chocolate;
+        height: 400px;
+       }
+      .social p{
+        background-color: black;
+        border-radius: 3px;
+        color: whitesmoke;
+        margin:1px;
+      }
+      .box45,.box46,.box47{
+        width: 32.9%;
+        height: 350px;
+        background-color: aqua;
+        margin-left: 5px;
+        float: left;
+        margin-top: 2px;
+      }
+      .box45{
+        background: url(../img/Social04649-1.jpg)no-repeat;
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+   
+      }
+      .box46{
+        background: url(../img/Social1-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+  
+      }
+      .box47{
+        background: url(../img/Social\ skills1.jpg)no-repeat;
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+   
+      }
+      .language p{
+        background-color: black;
+        border-radius: 3px;
+        color: whitesmoke;
+        margin:1px;
+      }
+      .language{
+        border: 1px solid chocolate;
+        height: 400px;
+      }
+      .box48,.box49,.box50{
+        width: 32.9%;
+        height: 350px;
+        background-color: aqua;
+        margin-left: 5px;
+        float: left;
+        margin-top: 2px;
+      }
+      .box48{
+        background: url(../img/Language\ -19_104808-1.jpg);
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+      }
+      .box49{
+        background: url(../img/Language\ 9-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    
+      }
+      .box50{
+        background: url(../img/Language\ 4758-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+      .mediator{
+        border: 1px solid chocolate;
+        height: 400px;
+      }
+      .mediator p{
+        background-color: black;
+        border-radius: 3px;
+        color: whitesmoke;
+        margin:1px;
+      }
+      .box51,.box52,.box53{
+        width: 32.9%;
+        height: 350px;
+        background-color: aqua;
+        margin-left: 5px;
+        float: left;
+        margin-top: 2px;
+      }
+      .box51{
+        background: url(../img/Mediation\ 31-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+      .box52{
+       
+        background: url(../img/Mediator\ 04857-1.jpg)no-repeat;
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+      .box53{
+        background: url(../img/Mediation\ 4937-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+      .conflict{
+        border: 1px solid chocolate;
+        height: 400px;
+      }
+      .conflict p{
+        background-color: black;
+        border-radius: 3px;
+        color: whitesmoke;
+        margin:1px; 
+      }
+      .box54,.box55,.box56{
+        width: 32.9%;
+        height: 350px;
+        background-color: aqua;
+        margin-left: 5px;
+        float: left;
+        margin-top: 2px;
+      }
+      .box54{
+        background: url(../img/Conflict\ 05033-1.jpg);
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+      .box55{
+        background: url(../img/Conflict\ 05124-1.jpg);
+      }
+      .box56{
+        background: url(../img/Conflict\ 5129-1.jpg)no-repeat;
+        background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+        <p>we provide not only academic but extra curicullar programmes</p>
+    </div>
+    <div class="header2">
+    <p> heritage leaders </p>
+    </div>
+    <div class="header3">
+        <p>at <b>heritage leaders</b> school we only not prior our students academic performances,we also ensure our students participate in clubs,artisans trainings and to pick up one of our social skills, in which every student must participate all the three programmes.in order for our graduating student have the higher chance of getting into their desired colleges we provide them with extra prograammes which will be explained further on this page.   </p>
+    </div>
+    <div class="clubs">
+        <p>clubs</p>
+            <p>clubs are extra-curicullar programmes that enable  students to interact in a fun way while some clubs ensures students bring about innovative way of solving problems. here  at <b>HERITAGE LEADERS</b>  we ensure our students use this clubs to their effective capabilites but each student is required to participate in one of the following clubs. <br> <b>NOTE</b>;most of these clubs require physical contact and some may be strenous but we also advice our students who can cope with these type of Activities should refrain from them.so parent please ensure that is taken into consideration.  </p>
+            <p>our clubs</p>
+            <div class="volley">
+                <set>volley ball</set>
+                <br> <br>
+                <div class="box1"></div>
+               <div class="box2"></div>
+               <div class="box3"></div>
+               <div class="box4"></div>
+               <div class="box5"></div>
+            </div>
+            <div class="table">
+                <pan>table tennis</pan>
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                <div class="box9"></div>
+                <div class="box10"></div>
+            </div>
+            <div class="bad">
+                <pet>badminton</pet>
+                
+                <div class="box11"></div>
+               <div class="box12"></div>
+               <div class="box13"></div>
+               <div class="box14"></div>
+               <div class="box15"></div>
+            </div>
+            <div class="swim">
+                <into>swimming</into>
+                <div class="box16"></div>
+                <div class="box17"></div>
+                <div class="box18"></div>
+                <div class="box19"></div>
+                <div class="box20"></div>
+                
+            </div>
+            <div class="debate">
+                <bet>DEBATE</bet>
+                    <div class="box21"></div>
+            </div>
+            <div class="football">
+                <foot>football</foot>
+                <div class="box22"></div>
+                <div class="box23"></div>
+            </div>
+            <br>
+            <div class="artisan">
+            <jet>artisan training</jet>
+            <br> <br>
+            <jet>our artisan training imbibes self-reliance in our students,which enables them to have basic  surviving  skill in other to provide for them selves in <br><br> any enviroment they find themselves.All students are to participate in this exercise for there are marks recorded for each and every project <br><br> completed which will then be accumulated and added to our academic scores </jet>
+           <br><br>
+            <sock>trainings</sock>
+            <div class="train">
+            <div class="carpentary"></div>    
+             <br> 
+            <car>carpentary</car>
+            <br>
+            <div class="box24"></div>
+            <div class="box25"></div>
+            <div class="box26"></div>
+            </div>
+            
+            <div class="intern">
+                
+                <make>makeup</make>
+                
+                <div class="makeup">
+                     
+                    <div class="box27"></div>
+                    <div class="box28"></div>
+                    <div class="box29"></div>
+                </div>
+            </div>
+            <div class="clem">
+            <hair>hair styling</hair>
+    <div class="hair style">
+    <div class="box30"></div>
+    <div class="box31"></div>
+    <div class="box32"></div>
+    </div>
+            </div>
+            <div class="excel">
+            <barb>barbing</barb>
+            <div class="barber">
+                <div class="box33"></div>
+                <div class="box34"></div>
+                <div class="box35"></div>
+            </div>
+            </div>
+            <div class="palm">
+                <fashion>fashion designing</fashion>
+                <div class="fashion">
+                    <div class="box36"></div>
+                    <div class="box37"></div>
+                    <div class="box38"></div>
+                </div>
+                </div>
+                <div class="hole">
+                    <cook>baking & cooking</cook>
+                    <div class="baking">
+                        <div class="box39"></div>
+                        <div class="box40"></div>
+                        <div class="box41"></div>
+                    </div>
+                    </div>
+                    <div class="book">
+                        <code>coding</code>
+                        <div class="coding">
+                            <div class="box42"></div>
+                            <div class="box43"></div>
+                            <div class="box44"></div>
+                        </div>
+                        </div>
+            </div>
+            <div class="skills">
+ <p>we also ensure our students acquire social skills that enable them to have standerd communial living,all students are to ensure they participate in each of the following  </p>
+                    <div class="social">
+                        <p>social skills</p>
+                    <div class="box45"></div>
+                    <div class="box46"></div>
+                    <div class="box47"></div>
+                         </div>
+                         <div class="language">
+                            <p>language skills</p>
+                        <div class="box48"></div>
+                        <div class="box49"></div>
+                        <div class="box50"></div>
+                             </div>
+                             <div class="mediator">
+                                <p> conflict mediation skills</p>
+                            <div class="box51"></div>
+                            <div class="box52"></div>
+                            <div class="box53"></div>
+                                 </div>
+                                 <div class="conflict">
+                                    <p>conflict resolution skills</p>
+                                <div class="box54"></div>
+                                <div class="box55"></div>
+                                <div class="box56"></div>
+                                     </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+   </div> 
+</body>
+</html> 
